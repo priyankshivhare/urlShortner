@@ -41,10 +41,10 @@ public class AccountRegistrationController {
     public void urlRedirect(HttpServletResponse httpServletResponse, @PathVariable String shortUrl) {
         boolean search = false;
         for (Account account: accounts) {
-            System.out.println(account.getMatchingLongUrl(shortUrl));
-            if (account.getMatchingLongUrl(shortUrl) != null) {
+            String matchingLongUrl = account.getMatchingLongUrl(shortUrl);
+            if (matchingLongUrl != null) {
                 search = true;
-                httpServletResponse.setHeader("Location", account.getMatchingLongUrl(shortUrl));
+                httpServletResponse.setHeader("Location", matchingLongUrl);
                 httpServletResponse.setStatus(302);
             }
         }

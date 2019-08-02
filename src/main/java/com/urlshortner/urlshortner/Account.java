@@ -26,10 +26,10 @@ public class Account {
     }
 
     public String getMatchingLongUrl(String shortUrl) {
-        for (int i = 0; i < urlData.size(); i++) {
-            if (urlData.get(i).getShortUrl().equals(shortUrl)) {
-                urlData.get(i).updateUrlCount();
-                return urlData.get(i).getLongUrl();
+        for (UrlData parsedUrlData : urlData) {
+            if (parsedUrlData.getShortUrl().equals(shortUrl)) {
+                parsedUrlData.updateUrlCount();
+                return parsedUrlData.getLongUrl();
             }
         }
         return null;
