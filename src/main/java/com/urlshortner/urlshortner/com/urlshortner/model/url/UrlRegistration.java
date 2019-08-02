@@ -1,4 +1,4 @@
-package com.urlshortner.urlshortner;
+package com.urlshortner.urlshortner.com.urlshortner.model.url;
 
 public class UrlRegistration {
     private int accountId;

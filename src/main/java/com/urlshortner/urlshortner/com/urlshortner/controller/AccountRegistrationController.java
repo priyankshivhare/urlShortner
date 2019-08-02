@@ -1,5 +1,8 @@
-package com.urlshortner.urlshortner;
+package com.urlshortner.urlshortner.com.urlshortner.controller;
 
+import com.urlshortner.urlshortner.com.urlshortner.model.account.Account;
+import com.urlshortner.urlshortner.com.urlshortner.model.url.UrlData;
+import com.urlshortner.urlshortner.com.urlshortner.model.url.UrlRegistration;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;

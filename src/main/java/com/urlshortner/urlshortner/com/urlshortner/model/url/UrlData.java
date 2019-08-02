@@ -1,4 +1,4 @@
-package com.urlshortner.urlshortner;
+package com.urlshortner.urlshortner.com.urlshortner.model.url;
 
 import java.util.Random;
 
@@ -36,8 +36,7 @@ public class UrlData {
             int index = (int) (rnd.nextFloat() * URLCHARS.length());
             urlString.append(URLCHARS.charAt(index));
         }
-        String urlStr = urlString.toString();
-        return urlStr;
+        return urlString.toString();
     }
 
     @Override

@@ -1,4 +1,6 @@
-package com.urlshortner.urlshortner;
+package com.urlshortner.urlshortner.com.urlshortner.model.account;
+
+import com.urlshortner.urlshortner.com.urlshortner.model.url.UrlData;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -50,8 +52,7 @@ public class Account {
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
-        String saltStr = salt.toString();
-        return saltStr;
+        return salt.toString();
 
     }
 }
